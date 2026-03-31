@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Mail, GitHub, Linkedin, Download } from "lucide-react";
+//import { Mail, GitHub, Linkedin, Download } from "lucide-react";
 import "./App.css"; // Assure-toi que ce fichier existe
 
 // Composants simples pour remplacer shadcn/ui
