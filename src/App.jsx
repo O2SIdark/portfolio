@@ -1,7 +1,16 @@
 
 import { motion } from "framer-motion";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+const Card = ({ children }) => (
+  <div className="bg-gray-800 p-4 rounded-2xl shadow-lg">{children}</div>
+);
+
+const CardContent = ({ children }) => <div>{children}</div>;
+
+const Button = ({ children, ...props }) => (
+  <button className="bg-blue-500 px-4 py-2 rounded-xl hover:bg-blue-600 transition-colors" {...props}>
+    {children}
+  </button>
+);
 import { useState } from "react";
 import { Mail, Github, Linkedin, Download } from "lucide-react";
 
